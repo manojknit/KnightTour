@@ -24,7 +24,10 @@ Describe the tradeoffs between a single-core solution and a multi-core solution.
 ## Code
 
 Eight posible moves from a point.
-<img src="https://github.com/manojknit/iChappal_Kafka_Spark/blob/master/images/userprofile.png" width="350" height="400">
+* int[] row = { 2, 1, -1, -2, -2, -1, 1, 2, 2 };
+* int[] col = { 1, 2, 2, 1, -1, -2, -2, -1, 1 };
+
+<img src="https://github.com/manojknit/KnightTour/blob/master/img/knight.png" width="350" height="400">
 
 ```
 /**
@@ -107,7 +110,7 @@ public class App {
 ```
 
 ## Output
-<img src="https://github.com/manojknit/iChappal_Kafka_Spark/blob/master/images/output.png" width="350" height="400">
+<img src="https://github.com/manojknit/KnightTour/blob/master/img/output.png" width="350" height="400">
 
 
 ## Multi core usage test Code 
@@ -219,8 +222,10 @@ If I compile and run one thread in Sun's Java 1.1.7 on a 4-CPU Sun syatem and co
 
 Java automatically scales to use all available processors. 
 
-Multi-core - Advantages: A multi-core processor works faster for certain programs. The server may not get as hot when it is turned on. The server needs less power because it can turn off sections that are not needed. Drawback: After certain limit context switching degrads performance. Adding more cores adds up cost.
-Single core - Cost will be less but will take more run time.
+#### Multi-core - 
+Advantages: A multi-core processor works faster for certain programs. The server may not get as hot when it is turned on. The server needs less power because it can turn off sections that are not needed. Drawback: After certain limit context switching degrads performance. Adding more cores adds up cost.
+#### Single core -
+Cost will be less but will take more run time.
 
 ## Thank You
 Manoj Kumar
