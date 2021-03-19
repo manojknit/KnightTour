@@ -208,7 +208,6 @@ public class KnightTour implements Runnable {
 
     @Override
     synchronized public void run() {
-        // TODO Auto-generated method stub
         knightTour();
     }
     
@@ -218,13 +217,16 @@ public class KnightTour implements Runnable {
 ```
 
 ## Tradeoffs between a single-core execution and a multi-core execution
-If I compile and run one thread in Sun's Java 1.1.7 on a 4-CPU Sun syatem and compare performance by turning off CPUs one at a time and run. I see two CPUs are much better than one, but beyond two, additional CPUs don't do not help much. This might be high context switching so need to ne careful while choosing number of cores in the server. 
+If I compile and run one thread in Sun's Java 1.1.7 on a 4-CPU Sun system. To compare performance let's turn off CPUs one at a time and run. I see two CPUs are much better than one, but beyond two, additional CPUs don't do not help much. This might be due to high context switching so we need to be very careful while choosing number of cores on the server. 
 
 Java automatically scales to use all available processors. 
 
-#### Multi-core - 
-Advantages: A multi-core processor works faster for certain programs. The server may not get as hot when it is turned on. The server needs less power because it can turn off sections that are not needed. Drawback: After certain limit context switching degrads performance. Adding more cores adds up cost.
-#### Single core -
+#### Multi-core 
+Advantages: A multi-core processor works faster for certain programs. The server may not get as hot when it is turned on. The server needs less power because it can turn off sections that are not needed. 
+
+Drawback: After certain limit context switching degrads performance. Adding more cores adds up cost.
+
+#### Single-core
 Cost will be less but will take more run time.
 
 ## Thank You
