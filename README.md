@@ -110,7 +110,7 @@ public class App {
 ```
 
 ## Output
-<img src="https://github.com/manojknit/KnightTour/blob/master/img/output.png" width="350" height="400">
+<img src="https://github.com/manojknit/KnightTour/blob/master/img/output.png" >
 
 
 ## Multi core usage test Code 
